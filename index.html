@@ -51,7 +51,16 @@
 <audio id="bg-music" loop>
   <source src="audio/give-me-your-forever.mp3" type="audio/mpeg">
 </audio>
-
+<script>
+  document.addEventListener("click", () => {
+    const music = document.getElementById("bg-music");
+    if (music.paused) {
+      music.volume = 0.4;
+      music.play();
+    }
+  });
+</script>
 </body>
 
 </html>
+
